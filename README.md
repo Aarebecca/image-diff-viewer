@@ -2,7 +2,7 @@
 
 一个强大的 VS Code 插件，用于显示 Git 仓库中图片文件与上一个版本之间的差异。基于 `pixelmatch` 库实现像素级精确对比。
 
-![](./images/cover.png)
+![](https://mdn.alipayobjects.com/huamei_zsgszn/afts/img/A*hm_tSohEvJQAAAAARgAAAAgAemV7AQ/original)
 
 ## 功能特性
 
