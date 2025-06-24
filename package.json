@@ -1,6 +1,6 @@
 {
-  "name": "image-pixel-viewer",
-  "displayName": "Image Pixel Viewer",
+  "name": "image-pixel-diff",
+  "displayName": "Image Pixel Diff",
   "description": "A VSCode extension for comparing image versions with Git",
   "version": "0.0.2",
   "engines": {
@@ -21,7 +21,7 @@
   "publisher": "antvaaron",
   "icon": "icon.png",
   "main": "./out/extension.js",
-  "repository": "https://github.com/Aarebecca/image-pixel-viewer",
+  "repository": "https://github.com/Aarebecca/image-pixel-diff",
   "contributes": {
     "commands": [
       {
@@ -31,7 +31,7 @@
       },
       {
         "command": "imageDiff.openScmChanges",
-        "title": "Open Changes with Image Pixel Viewer",
+        "title": "Open Changes with Image Pixel Diff",
         "category": "Image Diff"
       },
       {
@@ -84,12 +84,12 @@
       }
     ],
     "configuration": {
-      "title": "Image Pixel Viewer",
+      "title": "Image Pixel Diff",
       "properties": {
         "imageDiff.defaultDiffTool": {
           "type": "boolean",
           "default": true,
-          "description": "Use Image Pixel Viewer as default diff tool for images"
+          "description": "Use Image Pixel Diff as default diff tool for images"
         }
       }
     }
