@@ -641,8 +641,8 @@ class WebviewContentGenerator {
               
               .image-wrapper {
                   position: relative;
-                  max-width: 90%;
-                  max-height: 90%;
+                  width: 100%;
+                  height: 100%;
                   border: 1px solid var(--vscode-widget-border);
                   border-radius: 3px;
                   overflow: hidden;
@@ -656,7 +656,9 @@ class WebviewContentGenerator {
               }
               
               .slider-container .previous-image {
-                  position: relative;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
                   z-index: 1;
               }
               
