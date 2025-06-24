@@ -2,7 +2,7 @@
   "name": "image-pixel-viewer",
   "displayName": "Image Pixel Viewer",
   "description": "A VSCode extension for comparing image versions with Git",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -12,6 +12,7 @@
   "activationEvents": [
     "onStartupFinished",
     "onView:scm",
+    "workspaceContains:**/*.{png,jpg,jpeg,gif,bmp,webp}",
     "onCommand:imageDiff.compareWithPrevious",
     "onCommand:imageDiff.openScmChanges",
     "onCommand:imageDiff.openAsDiffTool",
@@ -61,7 +62,22 @@
         "displayName": "Image Preview with Diff",
         "selector": [
           {
-            "filenamePattern": "*.{png,jpg,jpeg,gif,bmp,webp}"
+            "filenamePattern": "*.png"
+          },
+          {
+            "filenamePattern": "*.jpg"
+          },
+          {
+            "filenamePattern": "*.jpeg"
+          },
+          {
+            "filenamePattern": "*.gif"
+          },
+          {
+            "filenamePattern": "*.bmp"
+          },
+          {
+            "filenamePattern": "*.webp"
           }
         ],
         "priority": "default"
